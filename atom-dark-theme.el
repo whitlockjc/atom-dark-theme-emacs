@@ -82,6 +82,11 @@
  '(diff-hl-delete ((t (:foreground "#CC6666" :background "#7a3d3d"))))
  '(diff-hl-insert ((t (:foreground "#A8FF60" :background "#547f30"))))
 
+ ;; guide-key (https://github.com/kai2nenobu/guide-key)
+ '(guide-key/highlight-command-face ((t (:inherit (cursor)))))
+ '(guide-key/key-face ((t (:inherit (font-lock-warning-face)))))
+ '(guide-key/prefix-command-face ((t (:inherit (font-lock-keyword-face)))))
+ 
  ;; js2-mode (https://github.com/mooz/js2-mode)
  '(js2-error ((t (:foreground "#c00"))))
  '(js2-external-variable ((t (:inherit (font-lock-builtin-face)))))

@@ -16,6 +16,7 @@ bugs.  The following are supported:
 * Default Emacs theme faces _(There were some faces that I left untouched from the Emacs defaults.  I am sure these
 need to be ported as well but I didn't see any anomalies in my usage just yet.)_
 * [diff-hl](https://github.com/dgutov/diff-hl)
+* [guide-key](https://github.com/kai2nenobu/guide-key)
 * [js2-mode](https://github.com/mooz/js2-mode) _(Atom seems to parse at a level that Emacs/js2-mode do not and those
 situations will be noticeable.  Examples: number constants, regular expression contents, etc.)_
 * [powerline](https://github.com/milkypostman/powerline)
