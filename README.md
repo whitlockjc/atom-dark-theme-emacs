@@ -47,3 +47,11 @@ To make it the default theme add to your `.emacs` file:
 ```elisp
 (load-theme 'atom-dark t)
 ```
+
+Screenshots
+-----------
+
+To keep this page from loading slowly, screenshots have their own page:
+
+https://github.com/whitlockjc/atom-dark-theme-emacs/tree/master/screenshots/README.md
+
