@@ -1,5 +1,7 @@
 #### C
 ![C](/screenshots/c-mode.png)
+#### Dired
+![Dired](/screenshots/dired-mode.png)
 #### Emacs Lisp
 ![Emacs Lisp](/screenshots/elisp-mode.png)
 #### Guide Key

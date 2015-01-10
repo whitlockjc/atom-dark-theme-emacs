@@ -35,7 +35,7 @@
 ;; Testing
 (custom-theme-set-faces
  'atom-dark
-
+ 
  ;; Basic
  '(button ((t (:inherit (link)))))
  '(cursor ((((background light)) (:background "black")) (((background dark)) (:background "white"))))
@@ -89,6 +89,11 @@
  '(diff-hl-change ((t (:foreground "#E9C062" :background "#8b733a"))))
  '(diff-hl-delete ((t (:foreground "#CC6666" :background "#7a3d3d"))))
  '(diff-hl-insert ((t (:foreground "#A8FF60" :background "#547f30"))))
+
+ ;; dired-mode
+ '(dired-directory ((t (:inherit (font-lock-keyword-face)))))
+ '(dired-flagged ((t (:inherit (diff-hl-delete)))))
+ '(dired-symlink ((t (:foreground "#FD5FF1"))))
 
  ;; guide-key (https://github.com/kai2nenobu/guide-key)
  '(guide-key/highlight-command-face ((t (:inherit (cursor)))))
