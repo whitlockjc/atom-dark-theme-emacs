@@ -4,7 +4,7 @@
 ;; Author: Jeremy Whitlock <jwhitlock@apache.org
 ;; Version: 0.1
 ;; Keywords: themes atom dark
-;; URL: https://github.com/whitlockjc/atom-dark-theme-emacs.el
+;; URL: https://github.com/whitlockjc/atom-dark-theme-emacs
 ;;
 ;; This file is not part of GNU Emacs.
 ;;
