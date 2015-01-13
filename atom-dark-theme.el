@@ -119,6 +119,33 @@
  '(powerline-active2 ((t (:background "grey10"))))
  )
 
+(defvar atom-dark-theme-faces-for-mode t
+  "If t, atom-dark-theme will use Face Remapping to alter the theme faces for
+the current buffer based on its mode in an attempt to mimick the Atom Dark
+Theme from Atom.io as best as possible.
+
+The reason this is required is because some modes (html-mode, yaml-mode, ...)
+do not provide the necessary faces to do theming without conflicting with other
+modes.")
+
+;; Many modes in Emacs do not define their own faces and instead use standard Emacs faces when it comes to theming.
+;; That being said, to have a real "Atom Dark Theme" for Emacs, we need to work around this so that these themes look
+;; as much like "Atom Dark Theme" as possible.  This means using per-buffer faces via "Face Remapping":
+;;
+;;   http://www.gnu.org/software/emacs/manual/html_node/elisp/Face-Remapping.html
+;;
+;; Of course, this might be confusing to some when in one mode they see keywords highlighted in one face and in another
+;; mode they see a different face.  That being said, you can set the `atom-dark-theme-faces-for-mode` variable to `nil`
+;; to disable this feature.
+(defun atom-dark-theme-change-faces-for-mode ()
+  (interactive)
+  (and (eq atom-dark-theme-faces-for-mode t)
+       (cond
+	((member major-mode '(html-mode yaml-mode))
+	 (face-remap-add-relative 'font-lock-variable-name-face '(:inherit (font-lock-keyword-face)))))))
+
+(add-hook 'after-change-major-mode-hook 'atom-dark-theme-change-faces-for-mode)
+
 ;;;###autoload
 (and load-file-name
      (boundp 'custom-theme-load-path)
