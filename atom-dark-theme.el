@@ -39,7 +39,7 @@
  ;; Basic
  '(button ((t (:inherit (link)))))
  '(cursor ((((background light)) (:background "black")) (((background dark)) (:background "white"))))
- '(default ((t (:weight normal :slant normal :underline nil :overline nil :strike-through nil :box nil :inverse-video nil :foreground "#c5c8c6" :background "#1d1f21" :stipple nil :inherit nil))))
+ '(default ((t (:foreground "#c5c8c6" :background "#1d1f21" :weight normal :slant normal :underline nil :overline nil :strike-through nil :box nil :inverse-video nil :stipple nil :inherit nil))))
  '(escape-glyph ((t (:foreground "#FF8000"))))
  '(fixed-pitch ((t (:family "Monospace"))))
  '(header-line ((t (:foreground "grey90" :background "grey20"))))
@@ -104,6 +104,14 @@
  '(flx-highlight-face ((t (:inherit (link) :weight bold))))
 
  ;; markdown-mode (http://jblevins.org/projects/markdown-mode/)
+ ;;
+ ;; Note: Atom Dark Theme for Atom.io does not currently theme some things that markdown-mode does.  For cases where
+ ;;       Atom.io does not provide theming, this theme will leave the theming done by markdown-mode as-is.  Where both
+ ;;       Atom.io and markdown-mode provide theming, markdown-mode's theming will be changed to match that of Atom.io.
+ '(markdown-blockquote-face ((t :foreground "#555")))
+ '(markdown-header-face ((t :foreground "#eee")))
+ '(markdown-header-delimiter-face ((t (:inherit (markdown-header-face)))))
+ '(markdown-header-rule-face ((t (:inherit (font-lock-comment-face)))))
 
  ;; Js2-mode (https://github.com/mooz/js2-mode)
  '(js2-error ((t (:foreground "#c00"))))
@@ -142,7 +150,9 @@ modes.")
   (and (eq atom-dark-theme-faces-for-mode t)
        (cond
 	((member major-mode '(html-mode yaml-mode))
-	 (face-remap-add-relative 'font-lock-variable-name-face '(:inherit (font-lock-keyword-face)))))))
+	 (face-remap-add-relative 'font-lock-variable-name-face '(:inherit (font-lock-keyword-face))))
+	((eq major-mode 'markdown-mode)
+	 (face-remap-add-relative 'default '(:foreground "#999"))))))
 
 (add-hook 'after-change-major-mode-hook 'atom-dark-theme-change-faces-for-mode)
 
