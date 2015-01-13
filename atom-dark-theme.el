@@ -35,7 +35,7 @@
 ;; Testing
 (custom-theme-set-faces
  'atom-dark
- 
+
  ;; Basic
  '(button ((t (:inherit (link)))))
  '(cursor ((((background light)) (:background "black")) (((background dark)) (:background "white"))))
@@ -73,7 +73,7 @@
  '(font-lock-type-face ((t (:foreground "#C6C5FE"))))
  '(font-lock-variable-name-face ((t (:inherit (default)))))
  '(font-lock-warning-face ((t (:foreground "#ff982d" :weight bold))))
- 
+
  ;; mode-line
  '(mode-line ((t (:background "grey10" :foreground "#96CBFE"))))
  '(mode-line-buffer-id ((t (:weight bold))))
@@ -99,8 +99,13 @@
  '(guide-key/highlight-command-face ((t (:inherit (cursor)))))
  '(guide-key/key-face ((t (:inherit (font-lock-warning-face)))))
  '(guide-key/prefix-command-face ((t (:inherit (font-lock-keyword-face)))))
- 
- ;; js2-mode (https://github.com/mooz/js2-mode)
+
+ ;; flx-ido (https://github.com/lewang/flx)
+ '(flx-highlight-face ((t (:inherit (link) :weight bold))))
+
+ ;; markdown-mode (http://jblevins.org/projects/markdown-mode/)
+
+ ;; Js2-mode (https://github.com/mooz/js2-mode)
  '(js2-error ((t (:foreground "#c00"))))
  '(js2-external-variable ((t (:inherit (font-lock-builtin-face)))))
  '(js2-function-param ((t (:foreground "#C6C5FE"))))
