@@ -39,7 +39,7 @@
  ;; Basic
  '(button ((t (:inherit (link)))))
  '(cursor ((((background light)) (:background "black")) (((background dark)) (:background "white"))))
- '(default ((t (:inherit nil :stipple nil :background "#1d1f21" :foreground "#c5c8c6" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Source Code Pro"))))
+ '(default ((t (:weight normal :slant normal :underline nil :overline nil :strike-through nil :box nil :inverse-video nil :foreground "#c5c8c6" :background "#1d1f21" :stipple nil :inherit nil))))
  '(escape-glyph ((t (:foreground "#FF8000"))))
  '(fixed-pitch ((t (:family "Monospace"))))
  '(header-line ((t (:foreground "grey90" :background "grey20"))))
@@ -108,7 +108,7 @@
  '(js2-jsdoc-html-tag-name ((t (:foreground "#96CBFE"))))
  '(js2-jsdoc-tag ((t (:inherit (font-lock-doc-face):weight bold))))
  '(js2-jsdoc-type ((t (:inherit (font-lock-function-name-face)))))
- '(js2-jsdoc-value ((t (:inherit js2-function-param))))
+ '(js2-jsdoc-value ((t (:inherit (js2-function-param)))))
 
  ;; powerline (https://github.com/milkypostman/powerline)
  '(powerline-active2 ((t (:background "grey10"))))
