@@ -59,7 +59,7 @@ Configuration
 better support theming of modes that do not provide their own theme faces.  _(Example: html-mode, yaml-mode, etc.)_
 Whenever a mode like this is encountered, face remapping is used to alter the theme faces for the current buffer.  For
 example, in `yaml-mode` YAML nodes used the `font-lock-variable-name-face` which as part of this theme renders as
-`#c5c8c6` _(inherits from `default`) but to better match Atom Dark Theme in Atom.io it makes sense for
+`#c5c8c6` _(inherits from `default`)_ but to better match Atom Dark Theme in Atom.io it makes sense for
 `font-lock-variable-name-face` to inherit from `font-lock-keyword-face` so that it renders `#96CBFE`.
 
 For some, performing this customization could be confusing/annoying since in one mode a keyword might render one way and
