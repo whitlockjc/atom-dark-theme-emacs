@@ -64,10 +64,10 @@ example, in `yaml-mode` YAML nodes used the `font-lock-variable-name-face` which
 
 For some, performing this customization could be confusing/annoying since in one mode a keyword might render one way and
 in another mode it could render another way.  So to turn this off globally, just set the
-`atom-dark-theme-faces-for-mode` variable to anything but `t`.  Here is an example:
+`atom-dark-theme-force-faces-for-mode` variable to anything but `t`.  Here is an example:
 
 ```elisp
-(setq atom-dark-theme-faces-for-mode nil)
+(setq atom-dark-theme-force-faces-for-mode nil)
 ```
 
 Screenshots
