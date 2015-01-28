@@ -70,7 +70,8 @@
  '(font-lock-regexp-grouping-backslash ((t (:inherit font-lock-string-face))))
  '(font-lock-regexp-grouping-construct ((t (:foreground "#C6A24F"))))
  '(font-lock-string-face ((t (:foreground "#8AE234"))))
- '(font-lock-type-face ((t (:foreground "#C6C5FE"))))
+ '(font-lock-type-face ((t (:foreground "#CFCB90"))))
+;;  '(font-lock-type-face ((t (:foreground "#FFFFB6" :underline t))))
  '(font-lock-variable-name-face ((t (:inherit (default)))))
  '(font-lock-warning-face ((t (:foreground "#ff982d" :weight bold))))
 
@@ -120,7 +121,7 @@
  '(js2-jsdoc-html-tag-delimiter ((t (:foreground "#96CBFE"))))
  '(js2-jsdoc-html-tag-name ((t (:foreground "#96CBFE"))))
  '(js2-jsdoc-tag ((t (:inherit (font-lock-doc-face):weight bold))))
- '(js2-jsdoc-type ((t (:inherit (font-lock-function-name-face)))))
+ '(js2-jsdoc-type ((t (:inherit (font-lock-type-face)))))
  '(js2-jsdoc-value ((t (:inherit (js2-function-param)))))
 
  ;; powerline (https://github.com/milkypostman/powerline)
@@ -158,6 +159,8 @@ Current modes, and their faces, impacted by this variable:
        (cond
 	((member major-mode '(html-mode yaml-mode))
 	 (face-remap-add-relative 'font-lock-variable-name-face '(:inherit (font-lock-keyword-face))))
+	((eq major-mode 'java-mode)
+	 (face-remap-add-relative 'font-lock-variable-name-face '(:inherit (js2-function-param))))
 	((eq major-mode 'markdown-mode)
 	 (face-remap-add-relative 'default '(:foreground "#999")))
 	((member major-mode '(javascript-mode js2-mode))
