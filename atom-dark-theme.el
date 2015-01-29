@@ -157,7 +157,7 @@ Current modes, and their faces, impacted by this variable:
   (interactive)
   (and (eq atom-dark-theme-force-faces-for-mode t)
        (cond
-	((member major-mode '(html-mode yaml-mode))
+	((member major-mode '(conf-mode conf-javaprop-mode html-mode yaml-mode))
 	 (face-remap-add-relative 'font-lock-variable-name-face '(:inherit (font-lock-keyword-face))))
 	((eq major-mode 'java-mode)
 	 (face-remap-add-relative 'font-lock-variable-name-face '(:inherit (js2-function-param))))
