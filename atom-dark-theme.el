@@ -131,7 +131,7 @@
  '(speedbar-button-face ((t (:foreground "#AAAAAA"))))
  '(speedbar-directory-face ((t (:inherit (font-lock-keyword-face)))))
  '(speedbar-file-face ((t (:inherit (default)))))
- '(speedbar-highlight-face ((t (:inherit highlight))))
+ '(speedbar-highlight-face ((t (:inherit (highlight)))))
  '(speedbar-selected-face ((t (:background "#4182C4" :foreground "#FFFFFF"))))
  '(speedbar-separator-face ((t (:background "grey11" :foreground "#C5C8C6" :overline "#7C7C7C"))))
  '(speedbar-tag-face ((t (:inherit (font-lock-function-name-face)))))
