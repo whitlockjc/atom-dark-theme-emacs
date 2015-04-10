@@ -2,7 +2,7 @@
 ;;
 ;;
 ;; Author: Jeremy Whitlock <jwhitlock@apache.org
-;; Version: 0.1
+;; Version: 0.2
 ;; Keywords: themes atom dark
 ;; URL: https://github.com/whitlockjc/atom-dark-theme-emacs
 ;;
@@ -126,6 +126,15 @@
 
  ;; powerline (https://github.com/milkypostman/powerline)
  '(powerline-active2 ((t (:background "grey10"))))
+
+ ;; speedbar
+ '(speedbar-button-face ((t (:foreground "#AAAAAA"))))
+ '(speedbar-directory-face ((t (:inherit (font-lock-keyword-face)))))
+ '(speedbar-file-face ((t (:inherit (default)))))
+ '(speedbar-highlight-face ((t (:inherit highlight))))
+ '(speedbar-selected-face ((t (:background "#4182C4" :foreground "#FFFFFF"))))
+ '(speedbar-separator-face ((t (:background "grey11" :foreground "#C5C8C6" :overline "#7C7C7C"))))
+ '(speedbar-tag-face ((t (:inherit (font-lock-function-name-face)))))
  )
 
 (defvar atom-dark-theme-force-faces-for-mode t
