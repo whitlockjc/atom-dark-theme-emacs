@@ -124,6 +124,9 @@
  '(js2-jsdoc-type ((t (:inherit (font-lock-type-face)))))
  '(js2-jsdoc-value ((t (:inherit (js2-function-param)))))
 
+ ;; minimap (https://github.com/dengste/minimap)
+ '(minimap-active-region-background ((t (:inherit (highlight)))))
+
  ;; powerline (https://github.com/milkypostman/powerline)
  '(powerline-active2 ((t (:background "grey10"))))
 

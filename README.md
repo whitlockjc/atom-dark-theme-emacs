@@ -21,6 +21,7 @@ need to be ported as well but I didn't see any anomalies in my usage just yet.)_
 * [js2-mode](https://github.com/mooz/js2-mode) _(Atom seems to parse at a level that Emacs/js2-mode do not and those
 situations will be noticeable.  Examples: number constants, regular expression contents, etc.)_
 * [markdown-mode](http://jblevins.org/projects/markdown-mode/) _(Emacs seems to apply theming to more places in Markdown
+* [minimap](https://github.com/dengste/minimap)
 files and so it is not a 100% match but it felt wrong to remove the extra things just for the consistency of the port.)_
 * [powerline](https://github.com/milkypostman/powerline)
 
