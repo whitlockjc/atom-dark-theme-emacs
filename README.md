@@ -1,6 +1,8 @@
 Atom Dark Theme (for Emacs)
 ===========================
 
+[![Join the chat at https://gitter.im/whitlockjc/atom-dark-theme-emacs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/whitlockjc/atom-dark-theme-emacs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is a port of the Atom Dark theme from [Atom.io](https://atom.io/).  For comparision, please view the following:
 
 * [Atom Dark UI Theme](https://atom.io/themes/atom-dark-ui)
