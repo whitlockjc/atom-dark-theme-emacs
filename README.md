@@ -1,7 +1,7 @@
 Atom Dark Theme (for Emacs)
 ===========================
 
-This is a port of the Atom Dark theme from [Atom.io](https://atom.io/).  For comparision, please view the following:
+This is a port of the Atom Dark theme from [Atom.io](https://atom.io/).  For comparison, please view the following:
 
 * [Atom Dark UI Theme](https://atom.io/themes/atom-dark-ui)
 * [Atom Dark Syntax Theme](https://atom.io/themes/atom-dark-syntax)
