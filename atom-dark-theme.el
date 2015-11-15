@@ -81,6 +81,12 @@
  '(mode-line-emphasis ((t (:weight bold))))
  '(mode-line-highlight ((((class color) (min-colors 88)) (:box (:line-width 2 :color "#1d1f21" :style released-button))) (t (:inherit (highlight)))))
  '(mode-line-inactive ((default (:inherit (mode-line))) (((class color) (min-colors 88) (background light)) (:background "#7c7c7c" :foreground "grey20" :box (:line-width -1 :color "grey75" :style nil) :weight light)) (((class color) (min-colors 88) (background dark)) (:background "grey30" :foreground "grey80" :box (:line-width -1 :color "grey40" :style nil) :weight light))))
+ 
+ ;; ido-mode
+ '(ido-first-match ((t (:foreground "#C678DD" :weight bold))))
+ '(ido-only-match ((t (:foreground "#E06C75" :weight bold))))
+ '(ido-subdir ((t (:foreground "#61AFEF"))))
+ '(ido-virtual ((t (:foreground "#5C6370"))))
 
  ;; isearch
  '(isearch ((((class color) (min-colors 88) (background light)) (:foreground "lightskyblue1" :background "magenta3")) (((class color) (min-colors 88) (background dark)) (:foreground "brown4" :background "palevioletred2")) (((class color) (min-colors 16)) (:foreground "cyan1" :background "magenta4")) (((class color) (min-colors 8)) (:foreground "cyan1" :background "magenta4")) (t (:inverse-video t))))
