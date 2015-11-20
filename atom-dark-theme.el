@@ -85,6 +85,12 @@
  ;; isearch
  '(isearch ((((class color) (min-colors 88) (background light)) (:foreground "lightskyblue1" :background "magenta3")) (((class color) (min-colors 88) (background dark)) (:foreground "brown4" :background "palevioletred2")) (((class color) (min-colors 16)) (:foreground "cyan1" :background "magenta4")) (((class color) (min-colors 8)) (:foreground "cyan1" :background "magenta4")) (t (:inverse-video t))))
  '(isearch-fail ((((class color) (min-colors 88) (background light)) (:background "RosyBrown1")) (((class color) (min-colors 88) (background dark)) (:background "red4")) (((class color) (min-colors 16)) (:background "red")) (((class color) (min-colors 8)) (:background "red")) (((class color grayscale)) (:foreground "grey")) (t (:inverse-video t))))
+ 
+ ;; ido-mode
+ '(ido-first-match ((t (:foreground "violet" :weight bold))))
+ '(ido-only-match ((t (:foreground "#ff982d" :weight bold))))
+ '(ido-subdir ((t (:foreground "#8AE234"))))
+ '(ido-virtual ((t (:foreground "#7c7c7c"))))
 
  ;; diff-hl (https://github.com/dgutov/diff-hl)
  '(diff-hl-change ((t (:foreground "#E9C062" :background "#8b733a"))))
