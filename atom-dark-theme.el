@@ -161,6 +161,17 @@
  '(whitespace-space-before-tab ((t (:inherit (whitespace-empty)))))
  '(whitespace-tab ((t (:inherit (whitespace-empty)))))
  '(whitespace-trailing ((t (:inherit (trailing-whitespace)))))
+
+ ;; company
+ '(company-preview ((t (:foreground "#96CBFE"))))
+ '(company-preview-common ((t (:inherit company-preview :underline "#96CBFE"))))
+ '(company-preview-search ((t (:inherit company-preview))))
+ '(company-scrollbar-bg ((t (:inherit company-tooltip :background "dim grey"))))
+ '(company-scrollbar-fg ((t (:background "black"))))
+ '(company-tooltip ((t (:background "#c5c8c6" :foreground "#1d1f21"))))
+ '(company-tooltip-common ((t (:inherit company-tooltip :foreground "red4"))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :background "#96CBFE"))))
+ '(company-tooltip-selection ((t (:inherit company-tooltip :background "#96CBFE"))))
  )
 
 (defvar atom-dark-theme-force-faces-for-mode t
