@@ -1,7 +1,7 @@
 ;;; atom-dark-theme.el --- An Emacs port of the Atom Dark theme from Atom.io.
 ;;
 ;;
-;; Author: Jeremy Whitlock <jwhitlock@apache.org
+;; Author: Jeremy Whitlock <jwhitlock@apache.org>
 ;; Version: 0.2
 ;; Keywords: themes atom dark
 ;; URL: https://github.com/whitlockjc/atom-dark-theme-emacs
